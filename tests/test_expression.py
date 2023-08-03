@@ -1,7 +1,6 @@
 from unittest import TestCase
 
 from expression.expr.arithmetic import Constant, Div, Add, Mul
-from expression.expr.parse import parse
 
 
 class TestMiddle(TestCase):
@@ -15,7 +14,7 @@ class TestMiddle(TestCase):
 
     def test_div_error(self):
         term = Div(Constant(1), Constant(0))
-        self.assertRaises((ValueError, AssertionError), term.evaluate())
+        self.assertRaises((ValueError, AssertionError), term.evaluate)
 
     def test_add(self):
         term = Add(Constant(1), Constant(3))

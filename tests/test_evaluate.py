@@ -13,7 +13,7 @@ class TestEvaluate(TestCase):
         self.assertAlmostEqual(0.5, evaluate("1 / 2"), 5)
 
     def test_eval_div_error(self):
-        self.assertRaises((ValueError, AssertionError), evaluate("1 / 0"))
+        self.assertRaises((ValueError, AssertionError), evaluate, "1 / 0")
 
     def test_eval_add(self):
         self.assertEqual(4, evaluate("1 + 3"))
