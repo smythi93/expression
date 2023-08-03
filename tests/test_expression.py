@@ -3,7 +3,7 @@ from unittest import TestCase
 from expression.expr.arithmetic import Constant, Div, Add, Mul
 
 
-class TestMiddle(TestCase):
+class TestExpr(TestCase):
     def test_constant(self):
         term = Constant(0)
         self.assertEqual(0, term.evaluate())

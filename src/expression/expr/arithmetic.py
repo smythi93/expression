@@ -30,7 +30,6 @@ class Mul(Binary):
 class Div(Binary):
     def evaluate(self):
         l, r = self.left.evaluate(), self.right.evaluate()
-        assert r != 0
         return l / r
 
 

@@ -1,8 +1,6 @@
 from unittest import TestCase
 
 from expression.evaluate import evaluate
-from expression.expr.arithmetic import Constant, Div, Add, Mul
-from expression.expr.parse import parse
 
 
 class TestEvaluate(TestCase):

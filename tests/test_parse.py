@@ -4,7 +4,7 @@ from expression.expr.arithmetic import Constant, Div, Add, Mul
 from expression.expr.parse import parse
 
 
-class TestMiddle(TestCase):
+class TestParse(TestCase):
     def test_parse_constant(self):
         term = parse("0")
         self.assertIsInstance(term, Constant)
